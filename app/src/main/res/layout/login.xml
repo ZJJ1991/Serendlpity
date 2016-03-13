@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.62">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_title"
+            android:textSize="50sp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@mipmap/ic_email"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="10dip"
+                android:hint="@string/email"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etLogin"
+                android:minWidth="250dp"
+                android:maxEms="20"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_key"
+                android:contentDescription="@string/password"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/password"
+                android:singleLine="true"
+                android:minWidth="250dp"
+                android:inputType="textPassword"
+                android:id="@+id/etPassword" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/login"
+            android:id="@+id/ibLogin"
+            android:src="@mipmap/ic_login"
+            android:background="#000000"
+            android:scaleType="fitCenter"
+            android:minWidth="280dp"
+            android:layout_centerHorizontal="true"
+            android:focusable="false" />
+
+        <CheckBox
+            android:id="@+id/cbRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rememberpass"
+            android:layout_below="@+id/ibLogin"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+     <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/register"-->
+            <!--android:id="@+id/bRegister"-->
+            <!--android:background="#000000"-->
+            <!--android:textColor="#ffffff" />-->
+    <!-- Footer Start -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/signUp"
+            android:id="@+id/tvRegistration"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="90dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/forgetPass"
+            android:id="@+id/tvForgetPassword"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="55dp"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+    <!-- Footer Ends -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvContinueLoggedOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/withoutLogin"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
